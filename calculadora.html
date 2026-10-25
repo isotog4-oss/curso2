@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora · Área bajo la curva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">📐 Área bajo la curva</a>
+  <nav id="menu">
+    <a class="nv c1" href="index.html">🏠 Inicio</a>
+    <a class="nv c2" href="objetivos.html">🎯 Objetivos</a>
+    <a class="nv c3" href="conceptos.html">📚 Conceptos</a>
+    <a class="nv c4" href="videos.html">🎬 Videos</a>
+    <a class="nv c5" href="resueltos.html">✅ Resueltos</a>
+    <a class="nv c6" href="rectangulos.html">🧱 Rectángulos</a>
+    <a class="nv c7 active" href="calculadora.html">🧮 Calculadora</a>
+    <a class="nv c8" href="juego.html">🎮 Juego</a>
+    <a class="nv c9" href="propuestos.html">✏️ Practica</a>
+    <a class="nv c10" href="fuentes.html">🔗 Fuentes</a>
+  </nav>
+</header>
+<main>
+<section id="calculadora" class="page">
+  <h2>🧮 Calculadora mágica</h2>
+  <p>Tú pones los datos y nosotros hacemos todo el procedimiento. Escribe con el teclado o toca los botones.</p>
+  <div class="panel">
+    <p class="lbl">1. ¿Qué área quieres?</p>
+    <div class="chips" id="cTypes"><button class="chip on" data-t="axis">📉 Entre f(x) y el eje x</button><button class="chip" data-t="between">🔀 Entre f(x) y g(x)</button></div>
+    <p class="lbl">2. Escribe la función (toca la casilla que quieras llenar)</p>
+    <div class="controls">
+      <label>f(x) = <input type="text" id="cF" value="x^2-4" class="fin"></label>
+      <label id="cGwrap" hidden>g(x) = <input type="text" id="cG" value="x+2" class="fin"></label></div>
+    <div class="keys" id="keys"></div>
+    <p class="lbl">3. Intervalo</p>
+    <div class="controls"><label>a <input type="number" id="cA" value="0" step="any"></label><label>b <input type="number" id="cB" value="3" step="any"></label></div>
+    <p class="lbl">¿Sin ideas? Prueba un ejemplo:</p>
+    <div class="chips" id="cEx"></div>
+    <button class="go" id="cGo">✨ ¡Calcular!</button>
+    <div id="cOut" class="steps"></div>
+    <canvas id="cvCalc" width="700" height="300"></canvas>
+  </div>
+  <a class="go" href="juego.html">Siguiente: Juego ➡️</a>
+<a class="go back" href="index.html">🏠 Volver al inicio</a></section>
+</main>
+<footer>Israel Roberto Soto García · UMG · Cálculo II</footer>
+<script src="script.js"></script>
+</body>
+</html>

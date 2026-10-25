@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conceptos · Área bajo la curva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">📐 Área bajo la curva</a>
+  <nav id="menu">
+    <a class="nv c1" href="index.html">🏠 Inicio</a>
+    <a class="nv c2" href="objetivos.html">🎯 Objetivos</a>
+    <a class="nv c3 active" href="conceptos.html">📚 Conceptos</a>
+    <a class="nv c4" href="videos.html">🎬 Videos</a>
+    <a class="nv c5" href="resueltos.html">✅ Resueltos</a>
+    <a class="nv c6" href="rectangulos.html">🧱 Rectángulos</a>
+    <a class="nv c7" href="calculadora.html">🧮 Calculadora</a>
+    <a class="nv c8" href="juego.html">🎮 Juego</a>
+    <a class="nv c9" href="propuestos.html">✏️ Practica</a>
+    <a class="nv c10" href="fuentes.html">🔗 Fuentes</a>
+  </nav>
+</header>
+<main>
+<section id="conceptos" class="page">
+  <h2>📚 Conceptos, definiciones y propiedades</h2>
+  <p class="hint">Toca cada tarjeta para abrirla 👇</p>
+  <details class="card" open><summary>1️⃣ La idea: sumar rectángulos</summary>
+    <p>Si \(f(x)\ge 0\) en \([a,b]\), el área bajo la gráfica es la región entre la curva y el eje \(x\), desde \(x=a\) hasta \(x=b\). Dividimos \([a,b]\) en \(n\) partes de ancho \(\Delta x=\frac{b-a}{n}\) y sumamos rectángulos:</p>
+    $$A\approx\sum_{i=1}^{n} f(x_i^*)\,\Delta x$$
+    <p>¡Más rectángulos = mejor aproximación!</p>
+    <canvas id="cvConcept" width="640" height="260"></canvas>
+    <p class="hint">Aquí: \(f(x)=x^2\) en \([0,3]\) con 6 rectángulos. El área exacta es 9.</p></details>
+  <details class="card"><summary>2️⃣ La integral definida</summary>
+    <p>Cuando \(n\to\infty\), la suma se vuelve exacta. Eso es la integral definida (necesita que \(f\) sea continua en \([a,b]\)):</p>
+    $$A=\int_a^b f(x)\,dx=\lim_{n\to\infty}\sum_{i=1}^{n} f(x_i^*)\,\Delta x$$</details>
+  <details class="card"><summary>3️⃣ Teorema Fundamental del Cálculo</summary>
+    <p>Si \(F'(x)=f(x)\), entonces:</p>
+    $$\int_a^b f(x)\,dx=F(b)-F(a)$$
+    <p>Es un atajo: en vez de sumar infinitos rectángulos, usamos la antiderivada.</p></details>
+  <details class="card"><summary>4️⃣ Área entre dos curvas</summary>
+    <p>Si \(f(x)\ge g(x)\) en \([a,b]\):</p>
+    $$A=\int_a^b \big[f(x)-g(x)\big]\,dx$$
+    <p>Los límites suelen ser los puntos donde \(f(x)=g(x)\).</p></details>
+  <details class="card"><summary>5️⃣ Propiedades y ¡cuidado!</summary>
+    <ul><li>\(\int_a^b kf\,dx=k\int_a^b f\,dx\) y \(\int_a^b (f\pm g)\,dx=\int_a^b f\,dx\pm\int_a^b g\,dx\)</li>
+    <li>\(\int_a^b f\,dx=\int_a^c f\,dx+\int_c^b f\,dx\)</li>
+    <li>⚠️ Si \(f\) cambia de signo, la integral da el área <i>neta</i>. Para el área real usa \(\int_a^b |f(x)|\,dx\), separando en los ceros de \(f\).</li></ul></details>
+  <a class="go" href="videos.html">Siguiente: Videos ➡️</a>
+<a class="go back" href="index.html">🏠 Volver al inicio</a></section>
+</main>
+<footer>Israel Roberto Soto García · UMG · Cálculo II</footer>
+<script src="script.js"></script>
+</body>
+</html>

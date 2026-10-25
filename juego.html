@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juego · Área bajo la curva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">📐 Área bajo la curva</a>
+  <nav id="menu">
+    <a class="nv c1" href="index.html">🏠 Inicio</a>
+    <a class="nv c2" href="objetivos.html">🎯 Objetivos</a>
+    <a class="nv c3" href="conceptos.html">📚 Conceptos</a>
+    <a class="nv c4" href="videos.html">🎬 Videos</a>
+    <a class="nv c5" href="resueltos.html">✅ Resueltos</a>
+    <a class="nv c6" href="rectangulos.html">🧱 Rectángulos</a>
+    <a class="nv c7" href="calculadora.html">🧮 Calculadora</a>
+    <a class="nv c8 active" href="juego.html">🎮 Juego</a>
+    <a class="nv c9" href="propuestos.html">✏️ Practica</a>
+    <a class="nv c10" href="fuentes.html">🔗 Fuentes</a>
+  </nav>
+</header>
+<main>
+<section id="juego" class="page">
+  <h2>🎮 ¡Adivina el área!</h2>
+  <p>Cada cuadrito de la cuadrícula vale <b>1 u²</b>. Mira la zona azul y toca la respuesta correcta. ¡5 rondas!</p>
+  <div class="panel">
+    <div class="game-bar"><span>🎲 Ronda <b id="gRound">1</b>/5</span><span id="gStars">⭐ <b id="gScore">0</b></span></div>
+    <canvas id="cvGame" width="700" height="320"></canvas>
+    <div class="answers" id="gAns"></div>
+    <div class="result" id="gOut"></div>
+    <button class="go" id="gNext" hidden>Siguiente ➡️</button>
+  </div>
+<a class="go back" href="index.html">🏠 Volver al inicio</a></section>
+</main>
+<footer>Israel Roberto Soto García · UMG · Cálculo II</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rectángulos · Área bajo la curva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">📐 Área bajo la curva</a>
+  <nav id="menu">
+    <a class="nv c1" href="index.html">🏠 Inicio</a>
+    <a class="nv c2" href="objetivos.html">🎯 Objetivos</a>
+    <a class="nv c3" href="conceptos.html">📚 Conceptos</a>
+    <a class="nv c4" href="videos.html">🎬 Videos</a>
+    <a class="nv c5" href="resueltos.html">✅ Resueltos</a>
+    <a class="nv c6 active" href="rectangulos.html">🧱 Rectángulos</a>
+    <a class="nv c7" href="calculadora.html">🧮 Calculadora</a>
+    <a class="nv c8" href="juego.html">🎮 Juego</a>
+    <a class="nv c9" href="propuestos.html">✏️ Practica</a>
+    <a class="nv c10" href="fuentes.html">🔗 Fuentes</a>
+  </nav>
+</header>
+<main>
+<section id="interactivo" class="page">
+  <h2>🧱 Juega con los rectángulos</h2>
+  <p>Elige una función, un método y agrega rectángulos. ¡Mira cómo el error se hace chiquito!</p>
+  <div class="panel">
+    <p class="lbl">1. Elige la función</p><div class="chips" id="rFns"></div>
+    <p class="lbl">2. Elige el método</p>
+    <div class="chips" id="rMeths">
+      <button class="chip" data-m="left">⬅️ Izquierda</button><button class="chip on" data-m="mid">🎯 Punto medio</button>
+      <button class="chip" data-m="right">➡️ Derecha</button><button class="chip" data-m="trap">🔷 Trapecios</button></div>
+    <p class="lbl">3. ¿Cuántos rectángulos? <b id="rNv">6</b></p>
+    <div class="nrow"><button class="round" id="rMinus">➖</button><input type="range" id="rN" min="1" max="100" value="6"><button class="round" id="rPlus">➕</button>
+      <button class="btn small" data-n="5">5</button><button class="btn small" data-n="20">20</button><button class="btn small" data-n="100">100</button></div>
+    <div class="controls"><label>Desde a <input type="number" id="rA" value="0" step="0.5"></label><label>Hasta b <input type="number" id="rB" value="3" step="0.5"></label></div>
+    <canvas id="cvRiemann" width="700" height="320"></canvas>
+    <div class="result" id="rOut"></div>
+  </div>
+  <a class="go" href="calculadora.html">Siguiente: Calculadora ➡️</a>
+<a class="go back" href="index.html">🏠 Volver al inicio</a></section>
+</main>
+<footer>Israel Roberto Soto García · UMG · Cálculo II</footer>
+<script src="script.js"></script>
+</body>
+</html>

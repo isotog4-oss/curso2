@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resueltos · Área bajo la curva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$']]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html">📐 Área bajo la curva</a>
+  <nav id="menu">
+    <a class="nv c1" href="index.html">🏠 Inicio</a>
+    <a class="nv c2" href="objetivos.html">🎯 Objetivos</a>
+    <a class="nv c3" href="conceptos.html">📚 Conceptos</a>
+    <a class="nv c4" href="videos.html">🎬 Videos</a>
+    <a class="nv c5 active" href="resueltos.html">✅ Resueltos</a>
+    <a class="nv c6" href="rectangulos.html">🧱 Rectángulos</a>
+    <a class="nv c7" href="calculadora.html">🧮 Calculadora</a>
+    <a class="nv c8" href="juego.html">🎮 Juego</a>
+    <a class="nv c9" href="propuestos.html">✏️ Practica</a>
+    <a class="nv c10" href="fuentes.html">🔗 Fuentes</a>
+  </nav>
+</header>
+<main>
+<section id="resueltos" class="page">
+  <h2>✅ Problemas resueltos</h2>
+  <p class="hint">Toca el botón para ir descubriendo cada paso 👇</p>
+  <div class="card steps-card"><h3>Problema 1</h3>
+    <p>Halla el área bajo \(y=x^2+2x\) entre \(x=1\) y \(x=3\).</p>
+    <ol class="reveal">
+      <li>Es positiva en \([1,3]\), así que \(A=\int_1^3 (x^2+2x)\,dx\).</li>
+      <li>Antiderivada (regla de la potencia): \(F(x)=\frac{x^3}{3}+x^2\).</li>
+      <li>\(F(3)=9+9=18\) y \(F(1)=\frac13+1=\frac43\).</li>
+      <li>\(A=18-\frac43=\frac{50}{3}\approx 16.67\) u². <b>🎉 Respuesta: 50/3</b>. Compruébalo en la calculadora con <code>x^2+2*x</code>, a=1, b=3.</li></ol>
+    <button class="btn stepbtn">👆 Mostrar siguiente paso</button></div>
+  <div class="card steps-card"><h3>Problema 2</h3>
+    <p>Halla el área entre \(y=x+2\) y \(y=x^2\).</p>
+    <ol class="reveal">
+      <li>Puntos de corte: \(x+2=x^2\Rightarrow x^2-x-2=0\Rightarrow x=-1,\ x=2\).</li>
+      <li>En \((-1,2)\), \(x+2\ge x^2\) (en \(x=0\): \(2\ge0\)).</li>
+      <li>\(A=\int_{-1}^{2}(x+2-x^2)\,dx=\left[\frac{x^2}{2}+2x-\frac{x^3}{3}\right]_{-1}^{2}\)</li>
+      <li>\(F(2)=2+4-\frac83=\frac{10}{3}\); \(F(-1)=\frac12-2+\frac13=-\frac76\)</li>
+      <li>\(A=\frac{10}{3}+\frac76=\frac{27}{6}=\frac92\). <b>🎉 Respuesta: 9/2 = 4.5 u²</b></li></ol>
+    <button class="btn stepbtn">👆 Mostrar siguiente paso</button></div>
+  <div class="card steps-card"><h3>Problema 3 (cambia de signo)</h3>
+    <p>Halla el área entre \(y=x^2-4\) y el eje \(x\), de \(x=0\) a \(x=3\).</p>
+    <ol class="reveal">
+      <li>\(x^2-4=0\) en \(x=2\). La curva está bajo el eje en \([0,2]\) y sobre él en \([2,3]\).</li>
+      <li>\(A=\int_0^2 (4-x^2)\,dx+\int_2^3 (x^2-4)\,dx\)</li>
+      <li>Primera: \(\left[4x-\frac{x^3}{3}\right]_0^2=8-\frac83=\frac{16}{3}\)</li>
+      <li>Segunda: \(\left[\frac{x^3}{3}-4x\right]_2^3=(-3)-\left(-\frac{16}{3}\right)=\frac73\)</li>
+      <li>\(A=\frac{16}{3}+\frac73=\frac{23}{3}\approx7.67\). <b>🎉 Respuesta: 23/3 u²</b>. Si integras sin separar, te da \(-3\) (área neta), ¡que no es el área!</li></ol>
+    <button class="btn stepbtn">👆 Mostrar siguiente paso</button></div>
+  <a class="go" href="rectangulos.html">Siguiente: Rectángulos ➡️</a>
+<a class="go back" href="index.html">🏠 Volver al inicio</a></section>
+</main>
+<footer>Israel Roberto Soto García · UMG · Cálculo II</footer>
+<script src="script.js"></script>
+</body>
+</html>
