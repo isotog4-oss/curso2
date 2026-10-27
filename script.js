@@ -2,7 +2,7 @@
 /* YouTube: https://www.youtube.com/embed/ID_DEL_VIDEO   ·   Drive: https://drive.google.com/file/d/ID/preview */
 const VIDEOS=[
  {titulo:"🎬 Video 1: Suma de Riemann (rectángulos)",url:"https://www.youtube.com/embed/OAElUFRmQDI"},
- {titulo:"🎬 Video 2: Área con la integral definida",url:""},
+ {titulo:"🎬 Video 2: Área con la integral definida",url:"https://www.youtube.com/embed/85HfgQE3YEE"},
  {titulo:"🎬 Video 3: Área entre dos curvas",url:""}
 ];
 const $=id=>document.getElementById(id);
