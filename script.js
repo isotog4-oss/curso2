@@ -1,7 +1,7 @@
 /* ===== Configuración: pon aquí los enlaces de tus 3 videos ===== */
 /* YouTube: https://www.youtube.com/embed/ID_DEL_VIDEO   ·   Drive: https://drive.google.com/file/d/ID/preview */
 const VIDEOS=[
- {titulo:"🎬 Video 1: Suma de Riemann (rectángulos)",url:""},
+ {titulo:"https://youtu.be/OAElUFRmQDI",url:""},
  {titulo:"🎬 Video 2: Área con la integral definida",url:""},
  {titulo:"🎬 Video 3: Área entre dos curvas",url:""}
 ];
