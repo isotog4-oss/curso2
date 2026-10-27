@@ -3,7 +3,7 @@
 const VIDEOS=[
  {titulo:"🎬 Video 1: Suma de Riemann (rectángulos)",url:"https://www.youtube.com/embed/OAElUFRmQDI"},
  {titulo:"🎬 Video 2: Área con la integral definida",url:"https://www.youtube.com/embed/85HfgQE3YEE"},
- {titulo:"🎬 Video 3: Área entre dos curvas",url:""}
+ {titulo:"🎬 Video 3: Área entre dos curvas",url:"https://www.youtube.com/embed/jegKIL4RPOc"}
 ];
 const $=id=>document.getElementById(id);
 const FUNCS={"x²":x=>x*x,"x³−2x+3":x=>x**3-2*x+3,"sen(x)+1.5":x=>Math.sin(x)+1.5,"√x":x=>Math.sqrt(Math.max(x,0)),"e^(x/2)":x=>Math.exp(x/2),"1/(1+x²)":x=>1/(1+x*x)};
