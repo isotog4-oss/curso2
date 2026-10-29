@@ -3,7 +3,7 @@
 const VIDEOS=[
  {titulo:"🎬 Video 1: Ejemplo 1",url:"https://www.youtube.com/embed/DvkEd_Pftcg"},
  {titulo:"🎬 Video 2: Ejemplo 2",url:"https://www.youtube.com/embed/WwBZ_VFUNPw"},
- {titulo:"🎬 Video 3: Ejemplo 3",url:"https://www.youtube.com/embed/jegKIL4RPOc"}
+ {titulo:"🎬 Video 3: Ejemplo 3",url:"https://www.youtube.com/embed/VimDEZJj8nI"}
 ];
 const $=id=>document.getElementById(id);
 const FUNCS={"x²":x=>x*x,"x³−2x+3":x=>x**3-2*x+3,"sen(x)+1.5":x=>Math.sin(x)+1.5,"√x":x=>Math.sqrt(Math.max(x,0)),"e^(x/2)":x=>Math.exp(x/2),"1/(1+x²)":x=>1/(1+x*x)};
