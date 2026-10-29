@@ -1,7 +1,7 @@
 /* ===== Configuración: pon aquí los enlaces de tus 3 videos ===== */
 /* YouTube: https://www.youtube.com/embed/ID_DEL_VIDEO   ·   Drive: https://drive.google.com/file/d/ID/preview */
 const VIDEOS=[
- {titulo:"🎬 Video 1: Ejemplo 1",url:"https://www.youtube.com/embed/OAElUFRmQDI"},
+ {titulo:"🎬 Video 1: Ejemplo 1",url:"https://www.youtube.com/embed/DvkEd_Pftcg"},
  {titulo:"🎬 Video 2: Ejemplo 2",url:"https://www.youtube.com/embed/85HfgQE3YEE"},
  {titulo:"🎬 Video 3: Ejemplo 3",url:"https://www.youtube.com/embed/jegKIL4RPOc"}
 ];
